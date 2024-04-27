@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  align-items: center;
+  background:  linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+  padding: 0.4rem 1rem;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  backdrop-filter: blur(4px);
+  height: 5vh;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+
+  & .navigation {
+    margin-left: auto;
+    margin-right: 2.5rem;
+
+    & .navigation-ul {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      list-style-type: none;
+      font-size: 1.3rem;
+
+      & .text-red {
+        color: rgb(239 68 68);
+      }
+
+      & .text-black {
+        color: rgb(0, 0, 0);
+      }
+      
+      & a:hover{
+        color: rgb(143 151 31);
+      }
+    }
+  }
+}
